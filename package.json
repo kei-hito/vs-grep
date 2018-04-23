@@ -11,14 +11,21 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.grep",
+        "onCommand:extension.grepex"
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            {
+                "command": "extension.grep",
+                "title": "Grep"
+            },
+            {
+                "command": "extension.grepex",
+                "title": "Grep Regex"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
